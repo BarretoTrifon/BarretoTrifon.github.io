@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>menuBarreto</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="contenedore">
+      <a href="#" class="bt-menu"><img src="img/ofilo1.png" width="155" alt=""></a>
+      <span class="icon-list2 g" id="btnmenu"> <i class="fas fa-bars"></i></span>
+      <nav class="collapse" id="nave">
+        <ul class="subMenu">
+          <li class="subMenuli">
+            <a href="#"><span class="icon-house"><i class="fa fa-home" aria-hidden="true"></i></span>Inicio</a>
+          </li>
+          <li class="subMenuli">
+            <a href="#"><span class="icon-rocket"><i class="fa fa-hospital-o" aria-hidden="true"></i> </span>Acerca
+              de</a>
+          </li>
+          <li class="subMenuli">
+            <a href="#"><span class="icon-earth"><i class="fa fa-ambulance" aria-hidden="true"></i></span>Servicios</a>
+          </li>
+          <li class="subMenuli">
+            <a href="#"><span class="icon-mail"><i class="fa fa-phone" aria-hidden="true"></i></span>Contactos</a>
+          </li>
+        </ul>
+        <form class="formula">
+          <input class=" text-input" type="search" placeholder="Buscar" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </nav>
+      <span class="usuario" id="nombre"><i class="fas fa-user"></i> </span>
+    </div>
+  </header>
+  <div class="section  ba">
+    <div class="fondo"></div>
+    <div class="contenedor">
+        <div class="welcome-back" >
+          <div class="sign-up">
+            <div class="message" >
+              <h2>Accede al sistema </h2>
+            
+              <a href="#" class="sign-up-btn"  id="sign-up-btni" style="color: white"><span class="icon-rocket"><i class="fa fa-sign-in" aria-hidden="true"></i> </span>Click inicia sesion</a>
+             
+            </div>
+          </div>
+          <div class="sign-in">
+            <div class="message ">
+             
+              <form class="formula">
+                <input class="text-input" type="text" placeholder="Nombre" id="txtnom">
+              </form>
+              <button class="sign-in-btn"> <i class="fa fa-search" aria-hidden="true"></i>Iniciar Sesion</button>
+            </div>
+          </div>
+        </div>
+        <div class="welcome-back">
+          <div class="sign-up" id="sign-upi">
+            <div class="message">
+              <h2>Pagina principal de inicio de sesion</h2>
+            </div>
+          </div>
+          <div class="sign-in" id="sign-uni">
+            <div class="message">
+              <h2 style="color: white ;">Bienvenido Sitio WEB SSU<br> SSU Oruro - Bolivia</h2>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+  <div class="section">
+    <br><br>
+    <div class="formulario form mid">
+      <div id='wrapper' class="form-box mii">
+        <div class="botton-box">
+          <div class="elegir" id="elegir"></div>
+          <button type="button" class="toogle-btn miBoton" id="btnreg" onclick="registro()"><i class="fa fa-registered"
+              aria-hidden="true"></i> Registrarse</button>
+          <button type="button" class="toogle-btn miBotonNul" id="btnmon" onclick="moneda()"><i class="fa fa-arrow-left"
+              aria-hidden="true"></i> <i class="fa fa-money" aria-hidden="true"></i> <i class="fa fa-arrow-right"
+              aria-hidden="true"></i> Conversor</button>
+        </div>
+        <form id="mensage" action='' class='form midi input-group mii'>
+          <h2 class="principal">FORMULARIO DE MENSAJE</h2>
+          <p class='field required half'>
+            <label class='label required' for='name'><i class="fa fa-id-card" aria-hidden="true"></i> Nombre</label>
+            <input class='text-input' id='name' name='name' placeholder="Nombre" required type='text'>
+          </p>
+          <p class='field required half'>
+            <label class='label' for='email'><i class="fa fa-envelope-o" aria-hidden="true"></i> Email address </label>
+            <input class='text-input' id='email' name='email' placeholder="Correo Electronico" required type='email'>
+          </p>
+          <p class='field'>
+            <label class='label' for='message'><i class="fa fa-commenting-o" aria-hidden="true"></i> Asunto</label>
+            <textarea class='textarea' cols='50' id='message' name='message' placeholder="Asunto" required
+              rows='4'></textarea>
+          </p>
+          <p class='field required half'>
+            <label class='label' for='email'><i class="fa fa-phone" aria-hidden="true"></i> Telefono</label>
+            <input class='text-input' id='email' name='email' placeholder="telefono" required type='email'>
+          </p>
+          <p class='field'>
+            <input type="submit" value="Enviar mensaje">
+          </p>
+        </form>
+        <form id="conversor" action='' class='form midi input-group mii'>
+          <h2 class="principal">CONVERSOR MONEDA</h2>
+          <p class='field required half camMo'>
+            <label class='label required' for='name'><i class="fa fa-money" aria-hidden="true"></i> Seleccione
+              moneda</label>
+            <label class="custom-radio-checkbox">
+              <span class="custom-radio-checkbox__text">Dolar <i class="fa fa-usd" aria-hidden="true"></i></span>
+              <input class="custom-radio-checkbox__input mn" onclick="radioB()" type="radio" id='dolar' name='money'
+                required type='radio'>
+              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+            </label>
+            <label class="custom-radio-checkbox">
+              <span class="custom-radio-checkbox__text">Euro <i class="fa fa-eur" aria-hidden="true"></i></span>
+              <input class="custom-radio-checkbox__input mn" onclick="radioB()" type="radio" id='euro' name='money'
+                required type='radio'>
+              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+            </label>
+            <label class="custom-radio-checkbox">
+              <span class="custom-radio-checkbox__text">Real <i class="fa fa-usd" aria-hidden="true"></i></span>
+              <input class="custom-radio-checkbox__input mn" onclick="radioB()" type="radio" id='real' name='money'
+                required type='radio'>
+              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+            </label>
+            <img src="img/dine.png" width="70" alt="">
+          </p>
+          <p class='field required half'>
+            <label class='label required' for='name'><i class="fa fa-money" aria-hidden="true"></i> ingrese la cantidad
+              <span id="tipoM" style="color: rgb(255, 230, 0);"></span></label>
+            <br>
+            <input class='text-input mn' id='valorMo' name='valorMo' placeholder="Moneda" required type='number'>
+          </p>
+          <p class='field required half camMo'>
+            <label class='label' for='email'>Bs <i class="fa fa-money" aria-hidden="true"></i> Cambio a moneda Bs </label>
+            <br>
+            
+            <label class="custom-radio-checkbox"> <span
+                class="custom-radio-checkbox__text" id='cantidad' style="font-size: 25px ;"></span></label>
+          </p>
+          <p class='field'>
+            <input type="submit" value="Calcular moneda" id="btncan" onclick="cambioMo(); return false;">
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="section micar" style="top:55px">
+    <div class="fondo"></div>
+    <div class="contenedore">
+       <div class="formulario " >
+      <div class="mii" style="text-align: center; top: 45px; position:relative; padding:25px 0px 80px">
+        <div class="titulo mii" style="color: #f4f8f5; text-transform:uppercase; font-size:20px ;">Seguro
+          Social Universitario de Oruro</div>
+        <form class="  form ">
+          <input class=" text-input formd" type="search" placeholder="Ingrese alguna dato a ingresar"
+            aria-label="Search" />
+        </form>
+        <div class="mii">
+          <button>Mas informacion...</button>
+        </div>
+        <div class="logo d">
+          <img src="img/logoSSUEVerde.png" width="150" alt="">
+        </div>
+      </div>
+    </div>
+    <footer class="" style="top:45px">
+      <div class="menus">
+        <div class="cajass">
+          <h2>Soluciones</h2>
+          <a href="#">App Desarrollo</a>
+          <a href="#">App Marketing</a>
+          <a href="#">IOS Desarrollo</a>
+          <a href="#">Android Desarrollo</a>
+        </div>
+        <div class="cajass">
+          <h2>Soluciones</h2>
+          <a href="#">App Desarrollo</a>
+          <a href="#">App Marketing</a>
+          <a href="#">IOS Desarrollo</a>
+          <a href="#">Android Desarrollo</a>
+        </div>
+        <div class="cajass">
+          <h2>Seguro SSU</h2>
+          <a href="#">Inicio</a>
+          <a href="#">Acercda de</a>
+          <a href="#">Servicios</a>
+          <a href="#">Contactos</a>
+        </div>
+        <div class="cajass">
+          <h2>Redes Sociales</h2>
+          <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+          <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+          <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+          <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+        </div>
+      </div>
+      <div class="diez">
+        <p>Todos los derechos reservados © 2022 <b>Cod-X</b></p>
+      </div>
+    </footer>
+    </div>
+   
+  </div>
+  <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
