@@ -7,8 +7,6 @@
   padding: 0;
 }
 
-
-
 h1,
 h4,
 p {
@@ -63,9 +61,6 @@ hr {
   border-top: 3px solid rgba(11, 20, 39, 0.97);
 }
 
-
-
-
 header {
   width: 100%;
   box-shadow: 0px 1px 0px 0px #2e864b4f;
@@ -94,13 +89,11 @@ header .contenedore .icon-list2 {
 
 header .contenedore .bt-menu {
   text-decoration: none;
-
 }
 
 header .contenedore .collapse {
   width: 100%;
   margin: auto;
-
   display: flex;
   text-align: center;
   align-items: center;
@@ -113,15 +106,12 @@ header .contenedore .collapse .subMenu {
   max-width: 100%;
   position: relative;
   margin: auto;
-
   display: flex;
   text-align: center;
   list-style: none;
   align-items: center;
   justify-content: space-between;
 }
-
-
 
 header .contenedore .collapse .subMenu .subMenuli a {
   color: #09c742;
@@ -143,9 +133,6 @@ header .contenedore .collapse .subMenu .subMenuli a:hover {
   transition-duration: .5s;
 }
 
-
-
-
 .contenedore .usuario {
   position: absolute;
   z-index: -8;
@@ -164,16 +151,6 @@ header .contenedore .collapse .subMenu .subMenuli a:hover {
   margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
 /*CONFIGURACION GRAL DE LAS SECCIONES*/
 .section {
   margin: 0;
@@ -183,20 +160,11 @@ header .contenedore .collapse .subMenu .subMenuli a:hover {
 }
 
 .contenedor {
-
- 
-margin: auto;
+  margin: auto;
   display: flex;
   align-items: center;
   text-align: center;
 }
-
-
-
-
-
-
-
 
 .formulario {
   padding: 0px;
@@ -488,7 +456,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   position: sticky;
-
 }
 
 footer .menus {
@@ -499,7 +466,6 @@ footer .menus {
   align-items: center;
   flex-flow: row wrap;
   justify-content: space-between;
-
 }
 
 footer .diez {
@@ -558,26 +524,22 @@ footer .menus .cajass a {
 
 /*el contenido de las seccioones*/
 .contenedor .welcome-back {
-
-margin: auto;
+  margin: auto;
   max-width: 100%;
- 
   display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
- 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
 }
 
-
-
-.contenedor  .welcome-back .parrafo {
+.contenedor .welcome-back .parrafo {
   font-size: 14px;
   letter-spacing: 1px;
   text-align: justify;
 }
 
-.contenedor  .welcome-back .boton {
+.contenedor .welcome-back .boton {
   display: inline-block;
   position: relative;
   bottom: 6em;
@@ -586,7 +548,7 @@ text-align: center;
 
 }
 
-.contenedor  .titulo {
+.contenedor .titulo {
   font-size: 25px;
   text-align: center;
   color: #09c742;
@@ -596,7 +558,6 @@ text-align: center;
 }
 
 .ba {
-
   background-image: linear-gradient(to right, rgba(0, 14, 41, 0.87), rgba(0, 14, 41, 0.87)), url(../img/s1.jpg);
   background-size: cover;
   overflow: hidden;
@@ -615,10 +576,7 @@ text-align: center;
   background-image: linear-gradient(to right, rgba(0, 14, 41, 0.87), rgba(0, 14, 41, 0.87)), url(../img/s1.jpg);
 }
 
-
-
-
-.contenedor  .welcome-back .message {
+.contenedor .welcome-back .message {
   position: relative;
   display: block;
   margin: auto;
@@ -628,7 +586,7 @@ text-align: center;
   padding: 10px;
 }
 
-.contenedor  .welcome-back .message h2 {
+.contenedor .welcome-back .message h2 {
   font-size: 1.0rem;
   color: rgb(8, 165, 79);
   padding: 0;
@@ -637,7 +595,7 @@ text-align: center;
   letter-spacing: 1px;
 }
 
-.contenedor  .welcome-back .message button {
+.contenedor .welcome-back .message button {
   padding: 0.5rem;
   font-weight: 400;
   width: 100%;
@@ -774,27 +732,21 @@ text-align: center;
 
   /* para mostrar el usua*/
   .contenedor {
-  
-     display: block;
-      width: 100%;
-   
-    
+    display: block;
+    width: 100%;
   }
 
-  .contenedor  .welcome-back {
- position: relative;
-
-   
-   max-width: 90%;
+  .contenedor .welcome-back {
+    position: relative;
+    max-width: 90%;
     margin: auto;
-   
     align-items: center;
     text-align: center;
   }
-  .contenedor  .welcome-back .message{
-   
-  display: block;
-   margin: auto;
+
+  .contenedor .welcome-back .message {
+    display: block;
+    margin: auto;
     align-items: center;
     text-align: center;
   }
@@ -808,8 +760,6 @@ text-align: center;
   .contenedore .usuario {
     float: right;
   }
-
-  
 
   .formula {
     padding: 25px;
@@ -834,7 +784,6 @@ text-align: center;
 .toogle-btn {
   padding: 10px 22px;
   cursor: pointer;
-
   outline: none;
   position: relative;
 }
@@ -938,20 +887,18 @@ text-align: center;
 
 .miBoton {
   border: 1px solid #09c742;
-
   background-color: rgba(11, 20, 39, 0.97);
   color: #09c742;
   text-decoration: none;
-
   cursor: pointer;
-
   outline: none;
   position: relative;
 }
+
 .miBotonNul {
   border: 1px solid #3f4240;
   cursor: pointer;
-background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   color: rgb(85, 88, 87);
   text-align: center;
 }
