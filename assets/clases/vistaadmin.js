@@ -11,8 +11,6 @@ const procesarPedidoBtn = document.getElementById("procesar-pedido");
 const lblnombre = document.getElementById("lblnombre");
  
 
-const usuarioPa = document.getElementById("usuarioPa");
-const tipoPa = document.getElementById("tipoPa");
 cargarEventos();
 
 function cargarEventos() {
