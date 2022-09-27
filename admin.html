@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/images/logoSSUEVerde.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrapip.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <title>Admin</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light header">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/images/ofilo1.png" width="155" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav  navbar-nav me-auto mb-2 mb-lg-0" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab"
+              aria-controls="home" aria-selected="true"><i class="fa fa-list" aria-hidden="true"></i> Lista Medico</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab"
+              aria-controls="profile" aria-selected="false"><i class="fa fa-clock" aria-hidden="true"></i> Turno Medico</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" role="tab"
+              aria-controls="contact" aria-selected="false"><i class="fa fa-user" aria-hidden="true"></i> Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" id="usuarioPa">Disabled</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" id="tipoPa">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex formula ">
+          <input class=" text-input " type="search" placeholder="Buscar" aria-label="Search" />
+          <button class="" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="b-example-divider"></div>
+
+ 
+  <div class="container mt-5">
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+        <div class="container px-4 py-5" id="hanging-icons">
+          <h3 class="pb-2 border-bottom">LISTA DE MEDICOS</h3>
+          <div class="b-example-divider"></div>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      
+      <div class="card-body" id="tabMedico">
+          <table class="table align-middle mb-0 bg-white justify-content-center texto" id="lista-medi">
+            <thead class="bg-light">
+              <tr>
+                <th>Nombres</th>
+                <th>Apellidos P</th>
+                <th>Apellidos M</th>
+                <th>CI</th>
+                <th>Especialidad</th>
+                <th>Actualizar</th>
+                <th>Asignar</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+      
+      
+          </div>
+          <div class="b-example-divider"></div>
+        </div>
+
+        
+      </div>
+
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="card text-center">
+          <div class="card-header">
+            LISTA DE HORAS ASIGNADAS
+          </div>
+          <div class="card-body">
+            <div class="container">
+              
+              <div class="row">
+                <div class="b-example-divider"></div>
+                <div class="col">
+                  <div class="card-body" id="tabHora">
+                    <table class="table align-middle mb-0 bg-white justify-content-center texto" id="lista-hora">
+                      <thead class="bg-light">
+                        <tr>
+                          <th>cODIGO</th>
+                          <th>Nombre y apellidos</th>
+                          <th>Especialidad</th>
+                          <th>Fichas</th>
+                          <th>ci</th>
+                          <th>Hora Re</th>
+                          <th>Estado</th>
+                          <th>Eliminar</th>
+                          <th>Actualizar</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">..aaa.</div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="card text-center">
+            <div class="card-header">
+              Formulario de Asignar Hora
+            </div>
+            <div class="card-body">
+              <form id="formMedico">
+                <div class="form-floating mb-3">
+                  <input type="text" hidden id="ci" name="ci" class="form-control" placeholder="Nombres" required />
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" id="nombreDoc" hidden name="nombreDoc" class="form-control" placeholder="Nombres"
+                    required />
+                </div>
+                <div class="alert alert-primary" role="alert">
+                  Medico:
+                  <label id="lblnombre"></label>
+                </div>
+                <div class="row g-2">
+                  <div class="col-md">
+                    <div class="form-floating mb-3">
+                      <select class="form-select" aria-label="Floating label select example" id="especialidadMed"
+                        name="especialidadMed" required>
+                        <option selected value="MEDICO GRAL">MEDICO GRAL</option>
+                        <option value="CIRUGIA">CIRUGIA</option>
+                        <option value="ODONTOLOGIA">ODONTOLOGIA</option>
+                        <option value="GINECOLOGIA">GINECOLOGIA</option>
+                      </select>
+                      <label for="floatingSelectGrid">ESPECIALIDAD</label>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div class="form-floating mb-3">
+                      <input type="number" id="numeroFicha" name="numeroFicha" class="form-control"
+                        placeholder="apellidoMaterno" required />
+                      <label for="floatingInputGrid">Numero de ficha</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2">
+                  <div class="col-md">
+                    <div class="form-floating mb-3">
+                      <input type="time" id="horaReseva" name="horaReseva" min="08:00" max="14:00" class="form-control"
+                        placeholder="Apellido Paterno" required />
+                      <label for="floatingInputGrid">Hora reserva</label>
+                      <input type="text" hidden id="estadoPa" name="estadoPa" value="PENDIENTE" class="form-control"
+                        placeholder="Apellido Paterno" required />
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" id="btnReg" class="btn btn-primary btn-block mb-4 agregar-carrito">Registrar
+                  Cita</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+
+<div class="modal fade" id="exampleModalUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+      <div class="card text-center">
+<div class="card-header">
+  Formulario de Actualizacion
+</div>
+<div class="card-body">
+  <form  id="formMedico">
+    <div class="form-floating mb-3">
+      
+      <input type="text" id="ci" name="ci" class="form-control" placeholder="Nombres" required/>
+              <label class="form-label" for="floatingInput">cI</label>
+      
+    </div>
+    <div class="form-floating mb-3">
+      
+      <input type="text" id="nombreDoc" name="nombreDoc" class="form-control" placeholder="Nombres" required/>
+              <label class="form-label" for="floatingInput">Nombre Medicos</label>
+      
+    </div>
+   
+    <div class="row g-2">
+      <div class="col-md">
+        <div class="form-floating mb-3">
+       
+                    <select class="form-select" aria-label="Floating label select example" id="especialidadMed"
+                        name="especialidadMed" required>
+                        <option selected value="MEDICO GRAL">MEDICO GRAL</option>
+                        <option value="CIRUGIA">CIRUGIA</option>
+                        <option value="ODONTOLOGIA">ODONTOLOGIA</option>
+                        <option value="GINECOLOGIA">GINECOLOGIA</option>
+                    </select>
+                    <label for="floatingSelectGrid">ESPECIALIDAD</label>
+                
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="form-floating mb-3">
+         
+          <input type="text" id="numeroFicha" name="numeroFicha" class="form-control" placeholder="apellidoMaterno" required/>
+          <label  for="floatingInputGrid">Numero de ficha</label>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row g-2">
+      <div class="col-md">
+        <div class="form-floating mb-3">
+       
+          <input type="time" id="horaReseva" name="horaReseva" class="form-control" placeholder="Hora Reserva" required/>
+
+
+
+                  <label  for="floatingInputGrid">Hora reserva</label>
+                 
+        
+        </div>
+      </div>
+     
+    </div>
+    <input type="text" hidden id="estadoPa" name="estadoPa" value="PENDIENTE"  required/>
+   
+    <button type="submit" id="btnReg" class="btn btn-primary btn-block mb-4 agregar-carrito">Registrar Cita</button>
+  </form>
+
+
+</div>
+
+</div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+-->
+
+<script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="assets/clases/paciente.js"></script>
+  <script type="text/javascript" src="assets/clases/vistapaciente.js"></script>
+  <script type="text/javascript" src="assets/clases/admin.js"></script>
+  <script type="text/javascript" src="assets/clases/vistaadmin.js"></script>
+</body>
+
+</html>

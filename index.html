@@ -1,219 +1,126 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="img/logoSSUEVerde.png">
-  <link rel="stylesheet" href="css/style.css" />
-  <title>SegundoParcial_Barreto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage UAB</title>
+
+   
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="contenedore">
-      <a href="#" class="bt-menu"><img src="img/ofilo1.png" width="155" alt=""></a>
-      <span class="icon-list2 g" id="btnmenu"> <i class="fas fa-bars"></i></span>
-      <nav class="collapse" id="nave">
-        <ul class="subMenu">
-          <li class="subMenuli">
-            <a href="#"><span class="icon-house"><i class="fa fa-home" aria-hidden="true"></i></span>Inicio</a>
-          </li>
-          <li class="subMenuli">
-            <a href="#"><span class="icon-rocket"><i class="fa fa-hospital-o" aria-hidden="true"></i> </span>Acerca
-              de</a>
-          </li>
-          <li class="subMenuli">
-            <a href="#"><span class="icon-earth"><i class="fa fa-ambulance" aria-hidden="true"></i></span>Servicios</a>
-          </li>
-          <li class="subMenuli">
-            <a href="#"><span class="icon-mail"><i class="fa fa-phone" aria-hidden="true"></i></span>Contactos</a>
-          </li>
-        </ul>
-        <form class="formula">
-          <input class=" text-input" type="search" placeholder="Buscar" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </button>
-        </form>
-      </nav>
-      <span class="usuario" id="nombre"><i class="fas fa-user"></i> </span>
-    </div>
-  </header>
-  <div class="section  ba">
-    <div class="fondo"></div>
-    <div class="contenedor">
-      <div class="welcome-back">
-        <div class="sign-up">
-          <div class="message">
-            <h2>Accede al sistema </h2>
-            <a href="#" class="sign-up-btn" id="sign-up-btni" style="color: white"><span class="icon-rocket"><i
-                  class="fa fa-sign-in" aria-hidden="true"></i> </span>Click inicia sesion</a>
-          </div>
-        </div>
-        <div class="sign-in">
-          <div class="message ">
-            <form class="formula">
-              <input class="text-input" type="text" placeholder="Nombre" id="txtnom">
-            </form>
-            <button class="sign-in-btn"> <i class="fa fa-search" aria-hidden="true"></i>Iniciar Sesion</button>
-          </div>
-        </div>
-      </div>
-      <div class="welcome-back">
-        <div class="sign-up" id="sign-upi">
-          <div class="message">
-            <h2>Pagina principal de inicio de sesion</h2>
-          </div>
-        </div>
-        <div class="sign-in" id="sign-uni">
-          <div class="message">
-            <h2 style="color: white ;">Bienvenido Sitio WEB SSU<br> SSU Oruro - Bolivia</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section">
-    <br><br>
-    <div class="formulario form mid">
-      <div id='wrapper' class="form-box mii">
-        <div class="botton-box">
-          <div class="elegir" id="elegir"></div>
-          <button type="button" class="toogle-btn miBoton" id="btnreg" onclick="registro()"><i class="fa fa-registered"
-              aria-hidden="true"></i> Registrarse</button>
-          <button type="button" class="toogle-btn miBotonNul" id="btnmon" onclick="moneda()"><i class="fa fa-arrow-left"
-              aria-hidden="true"></i> <i class="fa fa-money" aria-hidden="true"></i> <i class="fa fa-arrow-right"
-              aria-hidden="true"></i> Conversor</button>
-        </div>
-        <form id="mensage" action='' class='form midi input-group mii'>
-          <h2 class="principal">FORMULARIO DE MENSAJE</h2>
-          <p class='field required half'>
-            <label class='label required' for='name'><i class="fa fa-id-card" aria-hidden="true"></i> Nombre y apellidos</label>
-            <input class='text-input' id='name' name='name' placeholder="Nombre" required type='text'>
-          </p>
-          <p class='field required half'>
-            <label class='label' for='email'><i class="fa fa-envelope-o" aria-hidden="true"></i> E-MAIL </label>
-            <input class='text-input' id='email' name='email' placeholder="Correo Electronico" required type='email'>
-          </p>
-          <p class='field'>
-            <label class='label' for='message'><i class="fa fa-commenting-o" aria-hidden="true"></i> Asunto</label>
-            <textarea class='textarea' cols='50' id='message' name='message' placeholder="Asunto" required
-              rows='4'></textarea>
-          </p>
-          <p class='field required half'>
-            <label class='label' for='email'><i class="fa fa-phone" aria-hidden="true"></i> Telefono</label>
-            <input class='text-input' id='email' name='email' placeholder="telefono" required type='email'>
-          </p>
-          <p class='field'>
-            <input type="submit" value="Enviar mensaje">
-          </p>
-        </form>
-        <form id="conversor" action='' class='form midi input-group mii'>
-          <h2 class="principal">CONVERSOR MONEDA</h2>
-          <p class='field required half camMo'>
-            <label class='label required' for='name'><i class="fa fa-money" aria-hidden="true"></i> Seleccione
-              moneda</label>
-            <label class="custom-radio-checkbox">
-              <span class="custom-radio-checkbox__text">Dolar <i class="fa fa-usd" aria-hidden="true"></i></span>
-              <input class="custom-radio-checkbox__input mn" onclick="radioB()" type="radio" id='dolar' name='money'
-                required type='radio'>
-              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
-            </label>
-            <label class="custom-radio-checkbox">
-              <span class="custom-radio-checkbox__text">Euro <i class="fa fa-eur" aria-hidden="true"></i></span>
-              <input class="custom-radio-checkbox__input mn" onclick="radioB()" type="radio" id='euro' name='money'
-                required type='radio'>
-              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
-            </label>
-            <label class="custom-radio-checkbox">
-              <span class="custom-radio-checkbox__text">Real <i class="fa fa-usd" aria-hidden="true"></i></span>
-              <input class="custom-radio-checkbox__input mn" onclick="radioB()" type="radio" id='real' name='money'
-                required type='radio'>
-              <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
-            </label>
-            <img src="img/dine.png" width="70" alt="">
-          </p>
-          <p class='field required half'>
-            <label class='label required' for='name'><i class="fa fa-money" aria-hidden="true"></i> ingrese la cantidad
-              <span id="tipoM" style="color: rgb(255, 230, 0);"></span></label>
-            <br>
-            <input class='text-input mn' id='valorMo' name='valorMo' placeholder="Moneda" required type='number'>
-          </p>
-          <p class='field required half camMo'>
-            <label class='label' for='email'>Bs <i class="fa fa-money" aria-hidden="true"></i> Cambio a moneda Bs
-            </label>
-            <br>
-            <label class="custom-radio-checkbox"> <span class="custom-radio-checkbox__text" id='cantidad'
-                style="font-size: 25px ;"></span></label>
-          </p>
-          <p class='field'>
-            <input type="submit" value="Calcular moneda" id="btncan" onclick="cambioMo(); return false;">
-          </p>
-        </form>
-      </div>
-    </div>
-  </div>
+    <main>
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Regístrarse</button>
+                </div>
+            </div>
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <form action="" class="formulario__login" id="loginU">
+                    <h2>Iniciar Sesión</h2>
+                    <div class="form-floating mb-3">
+                        <input type="text" id="usuario" name="usuario" class="form-control"
+                            placeholder="Apellido Paterno" required />
+                        <label for="floatingInputGrid">Usuario</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" id="contrasenaDoc" name="contrasenaDoc" class="form-control" placeholder="pasword"
+                            required />
+                        <label for="floatingInputGrid">Pasword</label>
+                    </div>
+                    <button>Entrar</button>
+                </form>
 
-  <div class="section micar" style="top:55px">
-    <div class="fondo"></div>
-    <div class="contenedore">
-      <div class="formulario ">
-        <div class="mii" style="text-align: center; top: 45px; position:relative; padding:25px 0px 80px">
-          <div class="titulo mii" style="color: #f4f8f5; text-transform:uppercase; font-size:20px ;">Seguro
-            Social Universitario de Oruro</div>
-          <form class="  form ">
-            <input class=" text-input formd" type="search" placeholder="Registre su sugerencia" aria-label="Search" />
-          </form>
-          <div class="mii">
-            <button><i class="fa fa-comments-o" aria-hidden="true"></i> Enviar sugerencia</button>
-          </div>
-          <div class="logo d">
-            <img src="img/logoSSUEVerde.png" width="150" alt="">
-          </div>
+                <!--Register-->
+                <form action="" class="formulario__register" id="formMed">
+                    <h2>Formulario de registro</h2>
+                    <div class="form-floating">
+                        <input type="text" id="nombreDoc" name="nombreDoc" class="form-control" placeholder="Nombres"
+                            required />
+                        <label class="form-label" for="floatingInput">Nombres</label>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="text" id="apellidoDoc" name="apellidoDoc" class="form-control"
+                                    placeholder="Apellido Paterno" required />
+                                <label for="floatingInputGrid">Apellido Paterno</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="text" id="apellidoDocm" name="apellidoDocm" class="form-control"
+                                    placeholder="apellidoMaterno" required />
+                                <label for="floatingInputGrid">Apellido Materno</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="text" id="ci" name="ci" class="form-control" placeholder="cedula ci"
+                                    required />
+                                <label class="form-label" for="floatingInputGrid">C.I.</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating ">
+                                <select class="form-select" aria-label="Floating label select example" id="expici"
+                                    name="expici" required>
+                                    <option selected value="ORURO">ORURO</option>
+                                    <option value="LAPAZ">LA PAZ</option>
+                                    <option value="BENI">BENI</option>
+                                    <option value="PANDO">PANDO</option>
+                                    <option value="CHUQUISACA">CHUQUISACA</option>
+                                    <option value="POTOSI">POTOSI</option>
+                                    <option value="TARIJA">TARIJA</option>
+                                    <option value="SANTACRUZ">SANTA CRUZ</option>
+                                    <option value="COCHABAMBA">COCHABAMBA</option>
+                                </select>
+                                <label for="floatingSelectGrid">Expedicion CI</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="text" id="usuarioDoc" name="usuarioDoc" class="form-control"
+                                    placeholder="Usuario" required />
+                                <label for="floatingInputGrid">Usuario</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="password" id="contrasenaDoc" name="contrasenaDoc" class="form-control"
+                                    placeholder="contrasenaDoc" required />
+                                <label for="floatingInputGrid">Contraseña</label>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="tipoP" name="tipoP" value="PACIENTE" class="form-control" placeholder="cedula ci"
+                    required />
+                    <button type="submit" class="btn btn-primary btn-block mb-4 agregar-carrito">Registrar</button>
+                </form>
+            </div>
         </div>
-      </div>
-      <footer class="" style="top:45px">
-        <div class="menus">
-          <div class="cajass">
-            <h2>Servicios</h2>
-            <a href="#">Medicina Gral.</a>
-            <a href="#">Especialidades</a>
-            <a href="#">Laboratorios</a>
-            <a href="#">Terapia intensiva</a>
-          </div>
-          <div class="cajass">
-            <h2>SSU contactos</h2>
-            <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> ssuoruro@gmail.com</a>
-            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 252-77455</a>
-            <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i> 65436040</a>
-            <a href="#"><i class="fa fa-ambulance" aria-hidden="true"></i> 252-47777</a>
-          </div>
-          <div class="cajass">
-            <h2>Seguro SSU</h2>
-            <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
-            <a href="#"><i class="fa fa-hospital-o" aria-hidden="true"></i> Acercda de</a>
-            <a href="#"><i class="fa fa-ambulance" aria-hidden="true"></i> Servicios</a>
-            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contactos</a>
-          </div>
-          <div class="cajass">
-            <h2>Redes Sociales</h2>
-            <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
-            <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-            <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-            <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-          </div>
-        </div>
-        <div class="diez">
-          <p>Todos los derechos reservados © 2022 <b> <small style="color: green ;">Cod</small> X</b></p>
-        </div>
-      </footer>
-    </div>
+    </main>
 
-  </div>
-  <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/clases/paciente.js"></script>
+    <script type="text/javascript" src="assets/clases/login.js"></script>
 </body>
 
 </html>

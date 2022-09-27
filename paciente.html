@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/images/logoSSUEVerde.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrapip.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <title>Paciente</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light header">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/images/ofilo1.png" width="155" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav  navbar-nav me-auto mb-2 mb-lg-0" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab"
+              aria-controls="home" aria-selected="true"><i class="fa fa-list" aria-hidden="true"></i> Cita medica</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab"
+              aria-controls="profile" aria-selected="false"><i class="fa fa-clock" aria-hidden="true"></i>  Historial</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" role="tab"
+              aria-controls="contact" aria-selected="false"><i class="fa fa-user" aria-hidden="true"></i> Perfil</a>
+          </li>
+         
+        </ul>
+       
+
+
+        <form class="d-flex formula ">
+          <input class=" text-input " type="search" placeholder="Buscar" aria-label="Search" />
+          <button class="" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+        <ul class="nav  navbar-nav mr-auto mb-2 mb-lg-0" role="tablist">
+          <li class="nav-item">
+           <a class="nav-link disabled fa fa-user" href="#" tabindex="-1" id="usuarioPa">Disabled</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link disabled fa fa-medkit" href="#" tabindex="-1" id="tipoPa">Disabled</a>
+         </li>
+       </ul>
+      </div>
+    </div>
+  </nav>
+
+   <div class="container mt-5">
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        
+        <div class="card text-center">
+          <div class="card-header">
+            RESERVA DE CITAS MEDICAS
+          </div>
+          <div class="card-body">
+
+            <div class="container">
+              <div class="b-example-divider"></div>
+              <div class="row">
+                <div class="col">
+                  <div class="card-body" id="tabHora">
+                    
+                    <table class="table align-middle mb-0 bg-white justify-content-center texto" id="lista-hora">
+                 <thead class="bg-light header">
+                   <tr>
+                     <th>Ficha y Hora</th>
+                     <th>Nombre y apellidos</th>
+                     <th>Especialidad</th>
+                     <th>Estado</th>
+                     
+                     <th>Reservar</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                 
+                 </tbody>
+               </table>
+                 </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          
+        </div>
+        
+      
+      
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+        <div class="card text-center">
+          <div class="card-header">
+            RESERVA DE CITAS MEDICAS
+          </div>
+          <div class="card-body">
+
+            <div class="container">
+              <div class="b-example-divider"></div>
+              <div class="row">
+                <div class="col">
+                  <div class="card-body" id="tabCita">
+                    
+                     <table class="table align-middle mb-0 bg-white justify-content-center texto" id="lista-cita">
+                  <thead class="bg-light header">
+                    <tr>
+                      <th>Nro codigo</th>
+                      <th>Nro Ficha y Hora</th>
+                      <th>Nombre y apellidos Medico</th>
+                      <th>Especialidad</th>
+                      <th>Usuario</th>
+                      <th>ciUsuario</th>
+                      <th>FechaReserva</th>
+                      <th>Estado</th>
+                      <th>Cancelar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                  </tbody>
+                </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          
+        </div>
+
+      </div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        
+      
+        <div class="container" id="hanging-icons">
+          <h3 class="pb-2 border-bottom">ACTUALIZAR PERFIL</h3>
+          <div class="b-example-divider"></div>
+          <div class="row g-4 py-5 row-cols-1 ">
+
+
+
+ <div class="card text-center">
+          <div class="card-header header">
+            Actualizar Perfil
+          </div>
+          <div class="card-body">
+            <form action="" class="" id="formMed">
+              <div class="form-floating mb-3">
+                  <input type="text" id="nombreDoc" name="nombreDoc" class="form-control" placeholder="Nombres"
+                      required />
+                  <label class="form-label" for="floatingInput">Nombres</label>
+              </div>
+              <div class="row g-2  mb-3">
+                  <div class="col-md">
+                      <div class="form-floating">
+                          <input type="text" id="apellidoDoc" name="apellidoDoc" class="form-control"
+                              placeholder="Apellido Paterno" required />
+                          <label for="floatingInputGrid">Apellido Paterno</label>
+                      </div>
+                  </div>
+                  <div class="col-md">
+                      <div class="form-floating">
+                          <input type="text" id="apellidoDocm" name="apellidoDocm" class="form-control"
+                              placeholder="apellidoMaterno" required />
+                          <label for="floatingInputGrid">Apellido Materno</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row g-2  mb-3">
+                  <div class="col-md">
+                      <div class="form-floating">
+                          <input type="text" id="ci" name="ci" class="form-control" placeholder="cedula ci"
+                              required />
+                          <label class="form-label" for="floatingInputGrid">C.I.</label>
+                      </div>
+                  </div>
+                  <div class="col-md">
+                      <div class="form-floating ">
+                          <select class="form-select" aria-label="Floating label select example" id="expici"
+                              name="expici" required>
+                              <option selected value="ORURO">ORURO</option>
+                              <option value="LAPAZ">LA PAZ</option>
+                              <option value="BENI">BENI</option>
+                              <option value="PANDO">PANDO</option>
+                              <option value="CHUQUISACA">CHUQUISACA</option>
+                              <option value="POTOSI">POTOSI</option>
+                              <option value="TARIJA">TARIJA</option>
+                              <option value="SANTACRUZ">SANTA CRUZ</option>
+                              <option value="COCHABAMBA">COCHABAMBA</option>
+                          </select>
+                          <label for="floatingSelectGrid">Expedicion CI</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row g-2  mb-3">
+                  <div class="col-md">
+                      <div class="form-floating">
+                          <input type="text" id="usuarioDoc" name="usuarioDoc" class="form-control"
+                              placeholder="Usuario" required />
+                          <label for="floatingInputGrid">Usuario</label>
+                      </div>
+                  </div>
+                  <div class="col-md">
+                      <div class="form-floating">
+                          <input type="text" id="contrasenaDoc" name="contrasenaDoc" class="form-control"
+                              placeholder="contrasenaDoc" required />
+                          <label for="floatingInputGrid">Contraseña</label>
+                      </div>
+                  </div>
+              </div>
+              <input type="hidden" id="tipoP" name="tipoP" value="PACIENTE" class="form-control" placeholder="cedula ci"
+              required />
+              <button type="submit" class="btn btn-primary btn-block mb-4 agregar-carrito">Registrar</button>
+          </form>
+
+          </div>
+         
+        </div>
+
+
+            </div>
+            </div>
+           
+
+
+
+
+
+
+       
+
+
+      </div>
+    </div>
+   </div>
+    
+   
+    
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ 
+    <div class="modal-dialog ">
+      <div class="modal-content header">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+      <div class="card text-center">
+<div class="card-header header">
+  Formulario de reserva cita
+</div>
+<div class="card-body header">
+  <form  id="formCita" >
+    <div class="form-floating mb-3">
+      
+      <input type="text" id="nombreMed" name="nombreMed" hidden class="form-control" placeholder="Nombres" required/>
+             
+      
+    </div>
+    <div class="alert alert-primary" role="alert">
+      Medico:
+      <label id="lblnombreMed"></label>
+    </div>
+    <div class="row g-2">
+      <div class="col-md">
+        <div class="form-floating mb-3">
+       
+          <input type="text" id="especialidadMed" hidden name="especialidadMed" class="form-control" placeholder="Apellido Paterno" required/>
+        
+        </div>
+        
+        <div class="alert alert-primary" role="alert">
+          Hora reserva:
+          <label id="lblreserva"></label>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="form-floating mb-3">
+         
+          <input type="text" id="numeroFicha" hidden name="numeroFicha" class="form-control" placeholder="apellidoMaterno" required/>
+          
+        </div>
+        <div class="alert alert-primary" role="alert">
+          Numero de ficha:
+          <label id="lblficha"></label>
+        </div>
+      </div>
+    </div>
+    <div class="row g-2">
+      <div class="col-md">
+        <div class="form-floating mb-3">
+       
+          <input type="text" id="horaReseva" hidden name="horaReseva" class="form-control" placeholder="Apellido Paterno" required/>
+                  <input type="text" id="ci" name="ci" hidden class="form-control" placeholder="Apellido Paterno" required/>
+                  <input type="text" id="estadoPa" hidden name="estadoPa" class="form-control" placeholder="EstadoPaciente" value="ESPERA" required/>
+        </div>
+        <div class="alert alert-primary" role="alert">
+          Especialidad:
+          <label id="lblEspecialidad"></label>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="form-floating mb-3">
+         
+          <input type="text" id="pacienteNom" hidden name="pacienteNom" class="form-control" placeholder="apellidoMaterno"  required/>
+          <input type="text" id="pacienteci" hidden  name="pacienteci" class="form-control" placeholder="apellidoMaterno" required/>
+          
+        </div>
+      </div>
+    </div>
+   
+   
+    <button type="submit" id="btnReg" class=" p-3 mb-4 agregar-carrito texto">Registrar Cita medica</button>
+  </form>
+
+
+</div>
+
+</div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/clases/paciente.js"></script>
+    <script type="text/javascript" src="assets/clases/vistapaciente.js"></script>
+    <script type="text/javascript" src="assets/clases/citaMedica.js"></script>
+    <script type="text/javascript" src="assets/clases/vistacita.js"></script>
+  </body>
+</html>
