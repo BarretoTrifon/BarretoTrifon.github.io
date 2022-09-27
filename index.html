@@ -109,8 +109,16 @@
                             </div>
                         </div>
                     </div>
-                    <input type="hidden" id="tipoP" name="tipoP" value="PACIENTE" class="form-control" placeholder="cedula ci"
-                    required />
+                    <div class="form-floating">
+                        <select class="form-select" aria-label="Floating label select example" id="tipoP"
+                        name="tipoP" required>
+                        <option selected value="PACIENTE">PACIENTE</option>
+                        <option value="MEDICO">MEDICO</option>
+                        <option value="ADMINISTRADOR">ADMINISTRADOR</option>
+                    </select>
+                    <label for="floatingSelectGrid">Tipo Usuario</label>
+                    </div>
+                   
                     <button type="submit" class="btn btn-primary btn-block mb-4 agregar-carrito">Registrar</button>
                 </form>
             </div>
