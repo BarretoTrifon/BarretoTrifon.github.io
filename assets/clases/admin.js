@@ -50,7 +50,7 @@ class registroMedico {
           <a href="#" class="borrar-hora fa fa-trash-o" data-id="${medico.id}"></a>
       </td>
       <td>
-      <a href="#" class="actualiza-hora fas fa-times-circle" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="${medico.id}" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+      <a href="#" class="actualiza-hora fa fa-pencil-square-o" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="${medico.id}" ></a>
   </td>
   `;
     listahora.appendChild(row);
